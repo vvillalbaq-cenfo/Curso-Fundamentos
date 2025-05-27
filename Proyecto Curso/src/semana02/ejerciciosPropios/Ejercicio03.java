@@ -10,12 +10,11 @@ public class Ejercicio03 {
         Utils.limpiarConsola();
         System.out.println("Ejercicio 03: Encontrar la edad de Ana dentro de diez años");
 
-
-        Double edadElena;
-        edadElena = Utils.leerDoble(("Ingrese la Edad Actual de Elena:"));
+        int edadElena;
+        edadElena = Utils.leerEntero(("Ingrese la Edad Actual de Elena:"));
         
-        Double edadAna = edadElena * 2;
-        Double edadAnaDentroDeDiezAños = edadAna + 10;
+        int edadAna = edadElena * 2;
+        int edadAnaDentroDeDiezAños = edadAna + 10;
         
         System.out.println("La edad actual de Anas es: " + edadAna + " años.");
         System.out.println("La edad de Ana dentro de diez años será: " + edadAnaDentroDeDiezAños + " años.");
