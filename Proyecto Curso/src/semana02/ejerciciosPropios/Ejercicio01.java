@@ -1,4 +1,4 @@
-package ejerciciosPropios;
+package semana02.ejerciciosPropios;
 import utilitarios.Utils;
 public class Ejercicio01 {
     public static void main(String[] args) {
