@@ -8,18 +8,17 @@ public class Ejercicio03 {
        de Ana dentro de diez años.
       */ 
         Utils.limpiarConsola();
-        System.out.println("Ejercicio 02: Calcular la cantidad de kilómetros de un viaje realizado en carro");
-        
+        System.out.println("Ejercicio 03: Encontrar la edad de Ana dentro de diez años");
 
-        Double kilometrajeInicio;
-        kilometrajeInicio = Utils.leerDoble(("Ingrese el Kilometraje Inicial:"));
-        
-        Double kilometrajeFinal;
-        kilometrajeFinal = Utils.leerDoble(("Ingrese el Kilometraje Final: "));
 
-        Double totalKilometraje = kilometrajeFinal - kilometrajeInicio;
+        Double edadElena;
+        edadElena = Utils.leerDoble(("Ingrese la Edad Actual de Elena:"));
         
-        System.out.println("Kilometros Recorridos: " + totalKilometraje + "Km");
+        Double edadAna = edadElena * 2;
+        Double edadAnaDentroDeDiezAños = edadAna + 10;
+        
+        System.out.println("La edad actual de Anas es: " + edadAna + " años.");
+        System.out.println("La edad de Ana dentro de diez años será: " + edadAnaDentroDeDiezAños + " años.");
         System.out.println("Hecho por Victor Villalba Quintana");
     }
 }
