@@ -1,4 +1,4 @@
-package semana02;
+package semana02.ejemplosClase;
 
 import utilitarios.Utils;
 
