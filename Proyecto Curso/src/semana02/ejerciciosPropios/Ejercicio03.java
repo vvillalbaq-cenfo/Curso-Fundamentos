@@ -3,9 +3,9 @@ import utilitarios.Utils;
 public class Ejercicio03 {
          public static void main(String[] args) {
       /*
-    Calcular la cantidad de kilómetros de un viaje realizado en carro. El algoritmo debe recibir
-    el kilometraje del vehículo antes de iniciar el viaje, y el kilometraje del vehículo al terminar
-    el viaje. Se debe imprimir el total de kilómetros del viaje.
+       Encontrar la edad de Ana dentro de diez años, si la edad de Ana es dos veces la edad de
+       Elena. El programa recibe como entrada la edad actual de Elena, y debe imprimir la edad
+       de Ana dentro de diez años.
       */ 
         Utils.limpiarConsola();
         System.out.println("Ejercicio 02: Calcular la cantidad de kilómetros de un viaje realizado en carro");
