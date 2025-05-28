@@ -13,6 +13,7 @@ public class Ejercicio01 {
 
     String nombreProducto;
     nombreProducto = Utils.leerString(("Ingrese el nombre del producto:"));
+    
 
     Double precioProducto;
     precioProducto = Utils.leerDoble(("Ingrese el precio del producto: "));
