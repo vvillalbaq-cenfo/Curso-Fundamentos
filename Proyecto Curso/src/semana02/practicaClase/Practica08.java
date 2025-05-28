@@ -6,9 +6,11 @@ public class Practica08 {
     public static final double GANANCIA_VENDEDOR = 0.10;
 
     public static void main(String[] args) {
-
+        Utils.limpiarConsola();
+        //Entradas
         double costoUnitario = Utils.leerDoble("Ingresar precio del vehículo");
 
+        // Proceso
         double precioFinalImpuesto = costoUnitario * PORCENTAJE_IMPUESTO;
         double precioFinalVendedor = costoUnitario * GANANCIA_VENDEDOR;
         double precioFinal = costoUnitario + precioFinalImpuesto + precioFinalVendedor;
