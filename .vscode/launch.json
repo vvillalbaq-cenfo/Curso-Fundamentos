@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo01",
+            "request": "launch",
+            "mainClass": "semana02.ejemplosClase.Ejemplo01",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo02",
+            "request": "launch",
+            "mainClass": "semana02.ejemplosClase.Ejemplo02",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo03",
+            "request": "launch",
+            "mainClass": "semana02.ejemplosClase.Ejemplo03",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio01",
+            "request": "launch",
+            "mainClass": "semana02.ejerciciosPropios.Ejercicio01",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio02",
+            "request": "launch",
+            "mainClass": "semana02.ejerciciosPropios.Ejercicio02",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio03",
+            "request": "launch",
+            "mainClass": "semana02.ejerciciosPropios.Ejercicio03",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Practica01",
+            "request": "launch",
+            "mainClass": "semana02.practicaClase.Practica01",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Practica08",
+            "request": "launch",
+            "mainClass": "semana02.practicaClase.Practica08",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Practica12",
+            "request": "launch",
+            "mainClass": "semana02.practicaClase.Practica12",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio01(1)",
+            "request": "launch",
+            "mainClass": "semana03.ejercicioClase.Ejercicio01",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        }
+    ]
+}
