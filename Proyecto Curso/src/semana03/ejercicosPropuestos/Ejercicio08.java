@@ -22,7 +22,7 @@ public class Ejercicio08 {
         promedioExamenes = (notaPrimerExamen + notaSegundoExamen + notaTercerExamen) / 3.0;
 
         // Salida
-        if (promedioExamenes >= 70) {
+        if (promedioExamenes >= 70 ) {
             System.out.println("El estudiante ha aprobado el curso con un promedio de: " + promedioExamenes);
         } else {
             System.out.println("El estudiante ha reprobado el curso con un promedio de: " + promedioExamenes);
