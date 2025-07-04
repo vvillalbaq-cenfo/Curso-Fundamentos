@@ -23,7 +23,8 @@ public class Ejercicio01 {
 
         // Validacion del mes
         if (mesHoy >= 1 && mesHoy <= 12) {
-            if (mesHoy == 1 || mesHoy == 3 || mesHoy == 5 || mesHoy == 7 || mesHoy == 8 || mesHoy == 10 || mesHoy == 12) {
+            if (mesHoy == 1 || mesHoy == 3 || mesHoy == 5 || mesHoy == 7 || mesHoy == 8 || mesHoy == 10
+                    || mesHoy == 12) {
                 ultimoDiaMes = 31;
             } else {
                 if (mesHoy == 2) {
