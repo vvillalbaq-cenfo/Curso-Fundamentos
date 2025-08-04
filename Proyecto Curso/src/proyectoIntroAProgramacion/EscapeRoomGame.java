@@ -92,6 +92,15 @@ public class EscapeRoomGame {
                             Utils.pausar();
                         }
 
+                        if (cuartoCianCompleto) { // Si el cuarto cian está completo, muestra la pista encontrada
+                            System.out.println("Tu inventario contiene: ");
+                            System.out.println("Pista encontrada en el cuarto cian: E");
+                            Utils.pausar();
+                        } else { // Si el cuarto cian no está completo, informa al usuario
+                            System.out.println("Aún no tienes pistas del cuarto cian.");
+                            Utils.pausar();
+                        }
+
                     } else {
                         System.out.println("Debes crear un usuario primero para poder ver el inventario."); // Verifica
                                                                                                             // si se ha
@@ -169,7 +178,7 @@ public class EscapeRoomGame {
 
             // Validación para salir del juego
             Utils.limpiarConsola();
-        } while (!cuartoAmarilloCompleto); // Final del juego
+        } while (!cuartoCianCompleto); // Final del juego
 
         System.out
                 .println("¡Felicidades, has salido del cuarto! ¡Bienvenido a BK! Toma tu corona y tu juego adicional.");
