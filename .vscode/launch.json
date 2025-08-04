@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EscapeRoomGame",
+            "request": "launch",
+            "mainClass": "proyectoIntroAProgramacion.EscapeRoomGame",
+            "projectName": "Curso-Fundamentos_b74e876b"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio06",
             "request": "launch",
             "mainClass": "semana02.ejerciciosPropios.Ejercicio06",
