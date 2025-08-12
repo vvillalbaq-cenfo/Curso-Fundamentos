@@ -21,6 +21,7 @@ public class Main {
 
     public static void main(String[] args) {
         Animacion.bienvenida();
+        
         Cuartos.solicitarNombreUsuario();
 
         String[] opcionesMenu = {
@@ -91,5 +92,6 @@ public class Main {
         }
 
     }
+
 
 }

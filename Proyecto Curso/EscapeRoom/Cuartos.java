@@ -1023,52 +1023,45 @@ public class Cuartos {
     }
 
     // Metodo para procesar la salida en la puerta de salida
-    public static void procesarPurtaDeSalida() {
-        if (cuartoAmarilloCompleto || cuartoAzulCompleto || cuartoCianCompleto || cuartoFinalCompleto
-                || cuartoMagentaCompleto || cuartoRojoCompleto || cuartoVerdeCompleto) {
-            System.out.println("La puerta está cerrada con un código de 7 letras.");
-            boolean sabeClavePuerta = Utils.leerBoolean("¿Sabes el código de la puerta? (true/false)");
+  public static void procesarPurtaDeSalida() {
+    if (cuartoAmarilloCompleto || cuartoAzulCompleto || cuartoCianCompleto || cuartoFinalCompleto
+            || cuartoMagentaCompleto || cuartoRojoCompleto || cuartoVerdeCompleto) {
+        System.out.println("La puerta está cerrada con un código de 7 letras.");
+        boolean sabeClavePuerta = Utils.leerBoolean("¿Sabes el código de la puerta? (true/false)");
 
-            if (!sabeClavePuerta) {
-                System.out.println("Mejor busca más pistas antes de intentar abrirla.");
+        if (!sabeClavePuerta) {
+            System.out.println("Mejor busca más pistas antes de intentar abrirla.");
+            Utils.pausar();
+        } else if (sabeClavePuerta) {
+            int intentos = 3;
+            boolean acertado = false;
+
+            // Primero el acertijo del pomo
+            System.out.println("Antes de poder ingresar el código, debes girar el pomo resolviendo un acertijo...");
+            System.out.println("Acertijo:");
+            System.out.println("Entre panes me escondo, soy jugosa y sabrosa. Con queso o tocino, soy la reina gloriosa.");
+            String respuestaPomo = Utils.leerString("¿Qué soy?");
+
+            if (respuestaPomo.equalsIgnoreCase("hamburguesa")) {
+                System.out.println("*CLICK* El pomo gira lentamente...");
                 Utils.pausar();
-            } else if (sabeClavePuerta) {
-                int intentos = 3;
-                boolean acertado = false;
+                System.out.println("La puerta está lista para que ingreses el código.");
+                Utils.pausar();
 
+                // Solo si responde correctamente el acertijo, puede intentar el código
                 while (intentos > 0 && !acertado) {
-                    System.out.println(
-                            "Antes de poder ingresar el código, debes girar el pomo resolviendo un acertijo...");
-                    System.out.println("Acertijo:");
-                    System.out.println(
-                            "Entre panes me escondo, soy jugosa y sabrosa. Con queso o tocino, soy la reina gloriosa.");
-                    String respuestaPomo = Utils.leerString("¿Qué soy?");
-
-                    if (respuestaPomo.equalsIgnoreCase("hamburguesa")) {
-                        System.out.println("*CLICK* El pomo gira lentamente...");
+                    String codigoIngresado = Utils.leerString("Ingresa el código de 7 letras:");
+                    if (codigoIngresado.equalsIgnoreCase("WHOPPER")) {
+                        System.out.println("¡Código correcto! La puerta se abre...");
                         Utils.pausar();
-                        System.out.println("La puerta está lista para que ingreses el código.");
+                        Animacion.felicidades();
                         Utils.pausar();
-
-                        String codigoIngresado = Utils.leerString("Ingresa el código de 7 letras:");
-                        if (codigoIngresado.equalsIgnoreCase("WHOPPER")) {
-                            System.out.println("¡Código correcto! La puerta se abre...");
-                            Utils.pausar();
-                            Animacion.felicidades();
-                            Utils.pausar();
-                            acertado = true;
-                        } else {
-                            intentos--;
-                            if (intentos > 0) {
-                                System.out.println("Código incorrecto. Te quedan " + intentos + " intento(s).");
-                                Utils.pausar();
-                                Utils.limpiarConsola();
-                            }
-                        }
+                        acertado = true;
+                        System.exit(0); 
                     } else {
                         intentos--;
                         if (intentos > 0) {
-                            System.out.println("Respuesta incorrecta. Te quedan " + intentos + " intento(s).");
+                            System.out.println("Código incorrecto. Te quedan " + intentos + " intento(s).");
                             Utils.pausar();
                             Utils.limpiarConsola();
                         }
@@ -1076,19 +1069,33 @@ public class Cuartos {
                 }
 
                 if (!acertado) {
-                    System.out.println("¡Fallaste todos los intentos! Has perdido todas tus vidas. Fin del juego.");
+                    System.out.println("¡Fallaste todos los intentos del código! Has perdido todas tus vidas. Fin del juego.");
                     Animacion.gameOver();
                     Utils.pausar();
                     System.exit(0);
                 }
 
+            } else {
+                System.out.println("Respuesta incorrecta del acertijo.");
+                intentos--; 
+                System.out.println("Has perdido una vida. Te quedan " + intentos + " vida(s).");
+                
+                if (intentos <= 0) {
+                    System.out.println("¡Te has quedado sin vidas! Fin del juego.");
+                    Animacion.gameOver();
+                    Utils.pausar();
+                    System.exit(0);
+                }
+                
+                Utils.pausar();
+                return; 
             }
-        } else {
-            System.out.println("No has ingresado a ningún cuarto. Mejor busca más pistas antes de intentar abrirla.");
-            Utils.pausar();
         }
-
+    } else {
+        System.out.println("No has ingresado a ningún cuarto. Mejor busca más pistas antes de intentar abrirla.");
+        Utils.pausar();
     }
+}
 
     // Método para procesar la salida de un cuarto
     public static int procesarSalida(boolean obj1, boolean obj2, boolean obj3, boolean cajaAbierta, int vidasActuales,

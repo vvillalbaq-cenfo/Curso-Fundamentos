@@ -175,12 +175,13 @@ public class Animacion {
         System.out.println("═══════════════════════════════════════════════════════════");
         Utils.pausar();
         Utils.limpiarConsola();
-
         // Abrir el enlace del premio //Esta parte se realizó con Copilot, ya que no
         // sabiamos como redirigir a URL
-        String urlPremio = "https://ejemplo.com/juego-premio";
+        String urlPremio = "https://ejemplo.com/juego-premio"; 
         abrirURL(urlPremio);
-    }
+        }
+    
+
 
     // Método para abrir una URL en el navegador //Esta parte se realizó con
     // Copilot, ya que no sabiamos como redirigir a URL
