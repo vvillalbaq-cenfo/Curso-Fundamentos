@@ -154,7 +154,8 @@ public class Animacion {
         System.out.println("═══════════════════════════════════════════════════════════");
         Utils.pausar();
         Utils.limpiarConsola();
-        return gameOver = true;
+        System.exit(0);
+        return gameOver;
     }
 
     // Mensaje de victoria y apertura de URL

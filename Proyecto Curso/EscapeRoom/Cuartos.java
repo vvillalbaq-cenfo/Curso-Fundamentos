@@ -23,17 +23,14 @@ public class Cuartos {
     public static void solicitarNombreUsuario() {
         Utils.leerString("");
         boolean validacionNombreUsuario = false;
-
         do {
             nombreUsuario = Utils.leerString("Ingrese su nombre de usuario:");
-
             if (nombreUsuario != null && !nombreUsuario.trim().isEmpty()) {
                 validacionNombreUsuario = true;
                 System.out.println("Usuario " + nombreUsuario + " creado exitosamente.");
 
             } else {
                 System.out.println("El nombre de usuario no puede estar vacío. Intenta de nuevo.");
-
             }
             Utils.pausar();
             Utils.limpiarConsola();
@@ -1009,6 +1006,7 @@ public class Cuartos {
                 if (vidasActuales > 0) {
                     System.out.println("Código incorrecto. Te quedan " + vidasActuales + " intentos.");
                     Utils.pausar();
+                    Utils.limpiarConsola();
                 } else {
                     System.out.println("¡Fallaste todos los intentos! Has perdido todas tus vidas. Fin del juego.");
                     Animacion.gameOver();
