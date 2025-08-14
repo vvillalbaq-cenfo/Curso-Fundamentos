@@ -495,7 +495,7 @@ public class Cuartos {
                             }
                         }
                     } else {
-                        System.out.println("No hay nada en el inventario del cuarto rojo todavía.");
+                        System.out.println("No hay nada en el inventario del cuarto amarillo todavía.");
                     }
                     System.out.println("═════════════════════════════");
                     Utils.pausar();
@@ -600,7 +600,7 @@ public class Cuartos {
                             }
                         }
                     } else {
-                        System.out.println("No hay nada en el inventario del cuarto rojo todavía.");
+                        System.out.println("No hay nada en el inventario del cuarto magenta todavía.");
                     }
                     System.out.println("═════════════════════════════");
                     Utils.pausar();
@@ -710,7 +710,7 @@ public class Cuartos {
                             }
                         }
                     } else {
-                        System.out.println("No hay nada en el inventario del cuarto rojo todavía.");
+                        System.out.println("No hay nada en el inventario del cuarto verde todavía.");
                     }
                     System.out.println("═════════════════════════════");
                     Utils.pausar();
@@ -812,7 +812,7 @@ public class Cuartos {
                             }
                         }
                     } else {
-                        System.out.println("No hay nada en el inventario del cuarto rojo todavía.");
+                        System.out.println("No hay nada en el inventario del cuarto cian todavía.");
                     }
                     System.out.println("═════════════════════════════");
                     Utils.pausar();
@@ -918,7 +918,7 @@ public class Cuartos {
                             }
                         }
                     } else {
-                        System.out.println("No hay nada en el inventario del cuarto rojo todavía.");
+                        System.out.println("No hay nada en el inventario del cuarto final todavía.");
                     }
                     System.out.println("═════════════════════════════");
                     Utils.pausar();
