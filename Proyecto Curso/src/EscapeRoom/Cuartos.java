@@ -48,7 +48,7 @@ public class Cuartos {
         System.out.println(
                 "Debes estar atento a las pistas que encuentres en cada cuarto. Para abrir las cajas fuertes y conseguir los códigos para abrir la puerta final.");
         System.out.println(
-                "Además, debes de revisar como mínimo un cuarto, un objeto y tener mínimo una pista resuelta para poder salir del hotel.");
+                "Además, debes de revisar como mínimo un cuarto, un objeto y tener mínimo una pista resuelta para poder salir del Escape Room.");
         System.out.println(
                 "Si consumes los 10 minutos, un gas mortífero te aniquilará. Recuerda que tienes un máximo de 3 vidas por cuarto. Si superas este límite, perderás el juego.");
         System.out.println("¡Buena suerte, " + nombreUsuario + "!");
@@ -62,7 +62,6 @@ public class Cuartos {
             animacionPuertaRealista();
             Utils.establecerColorBlanco();
             Animacion.verMapaCuartoRojo();
-            ;
             Utils.pausar();
             Utils.establecerColorBlanco();
             String pistaObtenida = interaccionCuartoRojo();
@@ -89,7 +88,6 @@ public class Cuartos {
             animacionPuertaRealista();
             Utils.establecerColorBlanco();
             Animacion.verMapaCuartoVerde();
-            ;
             Utils.pausar();
             Utils.establecerColorBlanco();
             String pistaObtenida = interaccionCuartoVerde();
@@ -132,7 +130,7 @@ public class Cuartos {
     // Procesar Cuarto Azul
     public static void procesarCuartoAzul() {
         if (!cuartoAmarilloCompleto) {
-            System.out.println("Debes investigar primero los cuartos anteriores antes de desbloquear este cuarto");
+            System.out.println("Debes completar el cuarto amarillo antes de ingresar al cuarto azul.");
             Utils.pausar();
             return;
         }
@@ -210,7 +208,6 @@ public class Cuartos {
     // Procesar Cuarto Final
     public static void procesarCuartoFinal() {
         if (!todosLosCuartosCompletados()) {
-
             System.out.println("Debes completar todos los cuartos anteriores antes de acceder al cuarto final.");
             Utils.pausar();
             return;
