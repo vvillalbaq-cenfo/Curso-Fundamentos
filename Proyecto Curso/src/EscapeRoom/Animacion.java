@@ -176,23 +176,8 @@ public class Animacion {
         System.out.println("═══════════════════════════════════════════════════════════");
         Utils.pausar();
         Utils.limpiarConsola();
-        // Abrir el enlace del premio //Esta parte se realizó con Copilot, ya que no
-        // sabiamos como redirigir a URL
-        String urlPremio = "https://ejemplo.com/juego-premio"; 
-        abrirURL(urlPremio);
+        System.out.println("Toma tu regalo por jugar el Escape Room Bizcocho");
         }
     
-
-
-    // Método para abrir una URL en el navegador //Esta parte se realizó con
-    // Copilot, ya que no sabiamos como redirigir a URL
-    public static void abrirURL(String url) {
-        try {
-            java.awt.Desktop.getDesktop().browse(new java.net.URI(url));
-        } catch (Exception e) {
-            System.out.println("No se pudo abrir el enlace. Abre manualmente: " + url);
-        }
-    }
-
 
 }
